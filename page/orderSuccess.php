@@ -3,7 +3,7 @@ require '../_base.php';
 $_title = 'Order Success';
 include '../_head.php';
 
-$stripeAPIKey = "REDACTED_STRIPE_KEY";
+$stripeAPIKey = getenv('STRIPE_API_KEY') ?: '';
 \Stripe\Stripe::setApiKey($stripeAPIKey);
 
 $session_id = $_GET['session_id'] ?? null;

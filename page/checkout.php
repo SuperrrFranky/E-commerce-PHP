@@ -133,7 +133,7 @@ if (is_post()) {
 
         $newPoint = $GLOBALS['point'] + $earnedPoint;
 
-        $stripeAPIKey = "REDACTED_STRIPE_KEY";
+        $stripeAPIKey = getenv('STRIPE_API_KEY') ?: '';
         \Stripe\Stripe::setApiKey($stripeAPIKey);
 
         $checkout_session = \Stripe\Checkout\Session::create([
