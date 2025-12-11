@@ -1,0 +1,277 @@
+.productBody {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    margin-left: 10%;
+    box-sizing: border-box;
+    min-height: 100vh;
+    
+}
+/* Sidebar*/
+.sidebar
+{
+    height: 100%; 
+    width: 10%;
+    background-color: lightblue;
+    position: absolute; 
+    left: 0;
+    overflow-y: auto;
+}
+
+.sidebar h2
+{
+    text-align: center;
+}
+
+.sidebar ul
+
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.categoryList
+{
+    margin-top: 20px;
+}
+
+.sidebar .filter,.reset{
+  cursor: pointer;
+  width: 120px;
+  height: 20px;
+  border: none;
+  background-color: lightblue;
+ }
+
+ .sidebar .filter:hover,.reset:hover{
+    background-color: blue;
+    color: white;
+   }
+
+.range{
+    width: 120px;
+}
+
+/* Product card*/
+.container {
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 black;
+    margin: 20px;
+    height: 35%;
+    width: 15%;
+    border: 2px solid transparent;
+    transition: transform 0.3s,border 0.3s;
+}
+
+.container:hover
+{
+    transform: scale(1.05);
+    border: 4px solid black;
+}
+
+.productPhoto {
+    width: 200px; 
+    height: 150px; 
+    object-fit:contain
+}
+
+.container p {
+    font-size: 16px;
+    margin: 10px;
+    height: 40px; 
+}
+
+.container p:nth-child(2)
+{
+    color: blue;
+}
+
+.container p:nth-child(3)
+{
+    color: red;
+}
+
+#noProduct {
+    padding-left: 400px;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Product detail*/
+.productDetailBody {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.productDetailContainer {
+    position: relative;
+    box-shadow: 0 4px 8px grey;
+    margin: 0px 90px 40px 90px; 
+    padding: 20px; 
+}
+
+#productPhoto {
+    width: 350px;
+    height: auto;
+    float: left; 
+    margin-right: 30px; 
+    object-fit: cover;
+}
+
+.productHeader {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#productName, #productDesc, #productQuan {
+    font-size: 22px;
+    margin-bottom: 15px; 
+}
+
+.actionBtn
+{
+    cursor: pointer;
+    width: 120px;
+    height: 20px;
+    border: none;
+}
+
+.actionBtn:hover
+{
+    background-color: lightgray;
+}
+
+.reviewHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.userProfilePhoto {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.userDetails .username {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+    color: #333;
+}
+
+.reviewContent {
+    margin-left: 60px;
+}
+
+.reviewRating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ratingStars .star {
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+}
+
+.reviewDescription {
+    margin: 10px 0;
+}
+
+.reviewDescription h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.reviewDescription p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.reviewMedia {
+    margin: 10px 0;
+}
+
+.mediaGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.reviewMediaPhoto {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.noMedia {
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox.hidden {
+    display: none;
+}
+
+.lightbox-content {
+    position: relative;
+    text-align: center;
+}
+
+#lightbox-image {
+    max-width: 90%;
+    max-height: 80%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.lightbox-nav {
+    margin-top: 10px;
+}
+
+.lightbox-nav button {
+    background: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.lightbox-nav button:hover {
+    background: #ddd;
+}
+
+#lightbox-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}

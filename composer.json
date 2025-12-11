@@ -1,0 +1,7 @@
+{
+    "require": {
+        "stripe/stripe-php": "^16.4",
+        "dompdf/dompdf": "^3.0",
+        "google/recaptcha": "^1.3"
+    }
+}

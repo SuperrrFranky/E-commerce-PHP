@@ -1,0 +1,36 @@
+/*Admin page selector start */
+.adminDashboard {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.adminLinksContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.adminLink {
+    display: block;
+    align-content: center;
+    background-color: grey;
+    color: black;
+    padding: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.adminLink:hover {
+    background-color: lightblue;
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}

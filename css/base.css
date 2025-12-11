@@ -1,0 +1,123 @@
+/* General table*/
+.table {
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #333;
+    padding: 5px;
+}
+
+.table th {
+    color: #fff;
+    background: #666;
+}
+
+.table tr:hover td {
+    background: #ccc;
+}
+
+
+label > * {
+    vertical-align: text-top;
+}
+/* General form*/
+.form {
+    display: grid;
+    grid: auto / auto auto auto;
+    gap: 5px;
+    place-content: start;
+    place-items: center start;
+}
+
+form input
+{
+    width: 200px;
+}
+
+.form > label:not(:has(*)) {
+    place-self: stretch;
+    background: #ccc;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.form > section {
+    grid-column: 1 / -1;
+}
+/* Image & error*/
+label.upload img {
+    display: block;
+    border: 1px solid #333;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.err {
+    color: red;
+}
+/* button*/
+.btn ,
+.btn-red,
+.btn-green
+{
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 4px 2px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+.btn:hover
+{
+    background-color: lightgray;
+}
+
+.btn-red:hover
+{
+    background-color: red;
+}
+
+.btn-green:hover
+{
+    background-color: green;
+}
+
+/* pager*/
+a {
+    text-decoration: none;
+}
+
+nav.pager {
+    background: transparent;
+}
+
+nav.pager a {
+    outline: 2px solid #333;
+    margin: 5px;
+}
+
+nav.pager a.active {
+    background: #333;
+    color: white;
+}
+
+.table th a {
+    color: inherit;
+    display: block;
+}
+
+.table th a.asc::after {
+    content: ' ▴';
+}
+
+.table th a.desc::after {
+    content: ' ▾';
+}

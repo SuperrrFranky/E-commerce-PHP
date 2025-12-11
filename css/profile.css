@@ -1,0 +1,1132 @@
+/* ///Profile SideBar/// */
+.sidebar {
+    background-color: #f5f5f5;
+    border-color: rgb(83, 73, 224);
+    border: 10px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px auto ;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    bottom: 20px;
+    width: 200px;
+    height: auto;
+    float: left;
+}
+
+/* Sidebar List */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Sidebar List Items */
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+/* Sidebar Links */
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #d4d2d2;
+    color: #000;
+}
+
+.sidebar ul li a:hover {
+    background-color: #d4d2d2;
+    color: #000;
+}
+
+/* Main Layout Container */
+.main-layt {
+    margin-left: 240px;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* set color for selected menu side bar */
+.sidebar ul li.selected {
+    border-radius: 5px;
+    background-color: #504c4c;
+}
+/* set color for selected menu side bar content/text */
+.sidebar ul li.selected a {
+    color: #fcfcfc;
+}
+/* reset the color if hover on selected menu side bar */
+.sidebar ul li.selected a:hover {
+    color: #000;
+}
+
+/* Profile Title */
+.profile-title {
+    background-color: #666;
+    color: #f8f8f8;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.profile-title p {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Profile Details Container */
+.profile-details {
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+}
+
+.profile-details .form .internal-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Profile Information Section */
+.profile-details .user-details {
+    flex: 1;
+    width: 60%;
+}
+
+.vertical {
+    border-left: 1px groove rgb(139, 139, 139);
+    height: 400px;
+    left: 60%;
+  }
+
+/* Profile Picture Section */
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #bebebe;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 150px 0 0;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Upload Input Styling */
+.upload-input {
+    display: none;
+}
+
+.upload {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 1px 1px;
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.upload:hover {
+    background-color: rgba(167, 167, 167, 0.9);
+}
+
+.upload:hover::after {
+    content: 'Change Photo';
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 1px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Error Message Styling */
+.profile-details p[style*="color:red"] {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+table.user-details th, td{
+    text-align: left;
+    height: 50px;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    width: 250px;
+}
+
+/* Address Page Specific Styling */
+.profile-title {
+    background-color: #666;
+    color: #f8f8f8;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.address-details {
+    padding: 20px;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Address Form Styling */
+.input-form {
+    width: 100%;
+    border-spacing: 10px;
+}
+
+.input-form th, .input-form td {
+    text-align: left;
+    vertical-align: top;
+}
+
+.input-form th {
+    width: 150px;
+    font-weight: bold;
+}
+
+.input-form input {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+}
+
+.input-form .radio input {
+    width: 10px;
+    border: 0px none #ffffff;
+    padding: 0ch;
+}
+
+.input-form input:focus {
+    border-color: #504c4c;
+    outline: none;
+    box-shadow: 0 0 3px rgba(80, 76, 76, 0.5);
+}
+
+.picture-part p{
+    margin-left: 30px  ;
+}
+
+/* Button Styling */
+button[id="form-button"] {
+    background-color: #504c4c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button[id="form-button"]:hover {
+    background-color: #3a3737;
+}
+
+/* Address List Table */
+.address-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.address-table thead {
+    background-color: #504c4c;
+    color: white;
+}
+
+.address-table th, .address-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.address-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.address-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.address-table a {
+    color: #504c4c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.address-table a:hover {
+    text-decoration: underline;
+}
+
+/* Error Message Styling */
+.address-details p.error {
+    color: red;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+/* Default Button Styles */
+#add-address-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2e7d32;
+    /* background-color: #4CAF50; Default background color */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transitions for hover and click */
+}
+
+/* Hover State */
+#add-address-btn:hover {
+    background-color: #45a049; /* Darker green for hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Slightly larger shadow */
+}
+
+/* Active/Clicked State */
+#add-address-btn:active {
+    background-color: #2e7d32; /* Even darker green */
+    transform: scale(0.95); /* Slight shrink effect on click */
+}
+
+/* Toggled State */
+#add-address-btn.toggled {
+    background-color: #2e7d32; /* Change to orange for second click */
+    color: #ffffff; /* Keep text white */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Adjust shadow */
+}
+
+/* CHANEG PASSWORD PAGE*/
+/* Center the loader */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+  
+ @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+ }
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+  
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+  
+@-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+}
+  
+@keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+}
+  
+#myDiv {
+    display: none;
+    text-align: center;
+}
+
+/* ///PASSWORD/// */
+/* Centering the h2 element */
+.profile-details h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styling the password input box */
+.profile-details .form input[type="password"] {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto 10px auto;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input focus effect */
+.profile-details .form input[type="password"]:focus {
+    border-color: #504c4c;
+    box-shadow: 0 0 3px rgba(80, 76, 76, 0.5);
+    outline: none;
+}
+
+/* Styling the submit button */
+#pwd-form-button {
+    display: block;
+    width: 80%;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[id="pwd-form-button"] {
+    background-color: #504c4c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button[id="pwd-form-button"]:hover {
+    background-color: #3a3737;
+}
+
+/* General styles for error messages */
+.error-message {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #d9534f; /* Bootstrap danger color */
+    text-align: left;
+    font-style: italic;
+    margin-left: 360px;
+    padding: 10px;
+}
+
+/* General styles for error messages */
+.error-message-address {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #d9534f; /* Bootstrap danger color */
+    text-align: left;
+    font-style: italic;
+    padding: 10px;
+}
+
+.address-col {
+    width: 700px;
+}
+
+.address-col-1 {
+    width: 200px;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: scroll;
+}
+
+/* Popup Content */
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgba(80, 76, 76, 0.5);
+    width: 60%;
+    height: 85%;
+    overflow-y: scroll;
+}
+
+/* Close Button */
+.close-popup-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Form Elements */
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Submit Button */
+.delete-button {
+    padding: 5px 10px;
+    background-color: #a43232;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.default-address {
+    padding: 2px 4px 2px 4px;
+    color: green;
+    font-weight: bold;
+    margin-top: 5px;
+    border: solid;
+    border-color: #0d1c0d;
+    width: 50px;
+    border-width: 2px;
+}
+
+.set-default-button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    color: rgb(67, 66, 66);
+    background-color: #ffffff;
+    border: solid;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+.set-default-button:disabled {
+    background-color: rgb(217, 220, 209);
+    cursor: not-allowed;
+}
+
+button#delete_selected {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #a43232;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* WISHLIST CSS */
+.wishlist-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.product {
+    border: 1px solid #f1f1f1;
+    border-radius: 12px;
+    padding: 16px;
+    width: calc(20%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-info {
+    margin-top: 12px;
+}
+
+.product-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 6px;
+    line-height: 1.4;
+}
+
+.product-actions {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remove-from-wishlist {
+    background-color: #a43232;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.remove-from-wishlist:hover {
+    background-color: #a43232;
+    transform: scale(1.05);
+}
+
+.product a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product a:hover {
+    text-decoration: none;
+}
+
+.product-checkbox {
+    display: none;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+#batch-delete-btn {
+    display: none;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #a43232;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    display: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(154, 150, 150);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.top-left-btn {
+    top: 10px;
+    left: 10px;
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.top-left-btn:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+}
+
+.wishlist-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure it takes up the full width */
+}
+
+.wishlist-delete-option{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+/* Adjust filter section to fit on the left */
+.filter-section {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    gap: 10px; /* Add space between label and select */
+}
+
+/* Adjust category filter dropdown */
+#category-filter {
+    padding: 8px 16px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    background-color: #f7f7f7;
+    transition: background-color 0.3s;
+}
+
+#category-filter:hover {
+    background-color: #f1f1f1;
+}
+
+/* Style the button for the right side */
+.top-left-btn {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.top-left-btn:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+}
+
+/* REVIEW CSS */
+.review-container {
+    border: 1px solid #f1f1f1;
+    border-radius: 12px;
+    padding: 16px;
+    width: calc(100% -0px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.review-container a {
+    padding-right: 700px;
+}
+
+.product-review {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    justify-content: flex-start;
+}
+
+.product-review img {
+    width: 150px;
+    margin-right: 15px;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: scroll;
+}
+
+/* Popup Content */
+.popup-content-review {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(80, 76, 76, 0.5);
+    width: 60%;
+    height: 85%;
+    overflow-y: scroll;
+}
+
+.rating-star {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.star {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.star:hover {
+    transform: scale(1.2);
+}
+
+.container_tabs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab {
+    color: #000000;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tab.active {
+    color: #000000;
+    border-bottom: 3px solid #000000;
+}
+
+/* Style for the form container */
+form.review-form {
+    max-width: 100%;
+    margin: 0 auto; /* Center the form */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Spacing for form elements */
+form.review-form div {
+    margin-bottom: 15px;
+}
+
+/* Style for the textarea */
+form.review-form textarea {
+    width: 97%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; /* Allow vertical resizing only */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+form.review-form textarea:focus {
+    outline: none;
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Style for the submit-review button */
+#submit-review {
+    background-color: #565758;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#submit-review:hover {
+    background-color: #3f4041; /* Darker blue on hover */
+    transform: scale(1); /* Slight zoom effect */
+}
+
+#cancel-review {
+    background-color: #ffffff;
+    color: #3f4041;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#cancel-review:hover {
+    background-color: #dbdbdb; /* Darker blue on hover */
+    transform: scale(1); /* Slight zoom effect */
+}
+
+/* Additional styles for headers inside the form */
+form.review-form h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Optional styling for photo upload inputs */
+form.review-form input[type="file"] {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.reviewed-container {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-reviewed {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.product-reviewed img {
+    width: 150px;
+    margin: 10px 15px 0 10px;
+}
+
+.review-content {
+    padding: 0 0 10px 10px;
+}
+
+.file-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .file-item {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+  .file-item span {
+    margin-right: 8px;
+  }
+  .remove-button {
+    background: none;
+    border: none;
+    color: #d9534f;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .remove-button:hover {
+    color: #b52b27;
+  }
+
+  .lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox.hidden {
+    display: none;
+}
+
+.lightbox-content {
+    position: relative;
+    text-align: center;
+}
+
+#lightbox-image {
+    max-width: 90%;
+    max-height: 80%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.lightbox-nav {
+    margin-top: 10px;
+}
+
+.lightbox-nav button {
+    background: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.lightbox-nav button:hover {
+    background: #ddd;
+}
+
+#lightbox-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.privacy-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.privacy-container form .delete_account {
+    padding: 10px 20px;
+    background-color: #a43232;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.point-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.point-container-lvl2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.shop-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.shop-link:hover {
+    background-color: rgb(87, 87, 87);
+    transform: scale(1.05);
+}
+
+.add-review-button {
+    padding: 10px 20px;
+    background-color: #3d5d7f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-review-button:hover {
+    background-color: #49709a;
+    transform: scale(1.02);
+}
+
+.reset-address {
+    background-color: #f8f8f8;
+    color: #3f4041;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reset-address:hover {
+    background-color: #dbdbdb;
+    transform: scale(1); 
+}
